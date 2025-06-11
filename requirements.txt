@@ -1,5 +1,5 @@
---only-binary :all:  # Force pre-built wheels (avoids source builds)
+--only-binary :all:  # Prevents source builds
 streamlit==1.33.0
-pandas>=2.1.0        # Requires Python ≥3.8, compatible with 3.13
+pandas>=2.1.0
 plotly==5.18.0
-numpy>=1.26.0        # Modern version for Python 3.13
+numpy>=1.26.0,<2.0.0  # Explicitly cap at <2.0.0

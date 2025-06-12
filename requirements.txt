@@ -1,12 +1,12 @@
 --only-binary :all:  # Force pre-built wheels
 
-# Core packages
-streamlit==1.33.0
-pandas==2.2.1  # Updated to available version
-numpy==1.26.4  # Compatible with Python 3.11
+# Core packages (verified compatible versions)
+streamlit==1.28.0
+pandas==2.1.1
+numpy==1.24.3
 
 # Machine Learning
-scikit-learn==1.4.0  # Updated stable version
+scikit-learn==1.2.2
 
 # Visualization
-plotly==5.18.0
+plotly==5.15.0

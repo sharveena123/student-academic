@@ -1,15 +1,27 @@
-# --only-binary :all:  # Prevents source builds
-# streamlit==1.33.0
-# pandas>=2.1.0
-# plotly==5.18.0
-# numpy>=1.26.0,<2.0.0  # Explicitly cap at <2.0.0
+# # --only-binary :all:  # Prevents source builds
+# # streamlit==1.33.0
+# # pandas>=2.1.0
+# # plotly==5.18.0
+# # numpy>=1.26.0,<2.0.0  # Explicitly cap at <2.0.0
 
-# streamlit==1.33.0           # Streamlit supports Python 3.13+ :contentReference[oaicite:1]{index=1}
-# numpy>=2.1.0,<3.0.0         # NumPy 2.1+ supports Python 3.13 :contentReference[oaicite:2]{index=2}
-# pandas==2.2.3              # Pandas 2.2.3 supports Python 3.13 :contentReference[oaicite:3]{index=3}
-# plotly==5.18.0            # No known Python version issues with this
+# # streamlit==1.33.0           # Streamlit supports Python 3.13+ :contentReference[oaicite:1]{index=1}
+# # numpy>=2.1.0,<3.0.0         # NumPy 2.1+ supports Python 3.13 :contentReference[oaicite:2]{index=2}
+# # pandas==2.2.3              # Pandas 2.2.3 supports Python 3.13 :contentReference[oaicite:3]{index=3}
+# # plotly==5.18.0            # No known Python version issues with this
+# streamlit==1.33.0
+# pandas==2.2.3
+# numpy==1.26.4     # Latest NumPy <2.0 that works with Python 3.13
+# plotly==5.18.0
+# scikit-learn==1.4.0  # Stable version that works with Python 3.13
+--only-binary :all:  # Force pre-built wheels to avoid compilation issues
+
+# Core packages
 streamlit==1.33.0
-pandas==2.2.3
-numpy==1.26.4     # Latest NumPy <2.0 that works with Python 3.13
+pandas==2.1.3
+numpy==1.24.3
+
+# Machine Learning
+scikit-learn==1.3.2  # Includes sklearn.ensemble, sklearn.metrics, etc.
+
+# Visualization
 plotly==5.18.0
-scikit-learn==1.4.0  # Stable version that works with Python 3.13

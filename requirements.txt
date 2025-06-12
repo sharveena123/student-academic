@@ -4,7 +4,11 @@
 # plotly==5.18.0
 # numpy>=1.26.0,<2.0.0  # Explicitly cap at <2.0.0
 
-streamlit==1.33.0           # Streamlit supports Python 3.13+ :contentReference[oaicite:1]{index=1}
-numpy>=2.1.0,<3.0.0         # NumPy 2.1+ supports Python 3.13 :contentReference[oaicite:2]{index=2}
-pandas==2.2.3              # Pandas 2.2.3 supports Python 3.13 :contentReference[oaicite:3]{index=3}
-plotly==5.18.0            # No known Python version issues with this
+# streamlit==1.33.0           # Streamlit supports Python 3.13+ :contentReference[oaicite:1]{index=1}
+# numpy>=2.1.0,<3.0.0         # NumPy 2.1+ supports Python 3.13 :contentReference[oaicite:2]{index=2}
+# pandas==2.2.3              # Pandas 2.2.3 supports Python 3.13 :contentReference[oaicite:3]{index=3}
+# plotly==5.18.0            # No known Python version issues with this
+streamlit==1.33.0
+pandas==2.2.3
+numpy==1.26.4     # Latest NumPy <2.0 that works with Python 3.13
+plotly==5.18.0
